@@ -1,11 +1,12 @@
 package structs
 
-
 // Object for csvs
 // Anything starting with upper letter is visible to files outside this file
 type GameResultObject struct {
-	User string
-	Scrt string 
-	C_att string
-	WL string
+	User       string
+	SecretWord string
+	Attempts   int
+	WinLose    bool
+	Stime      int64
+	Elapsed    int64
 }
